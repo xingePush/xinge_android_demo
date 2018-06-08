@@ -18,3 +18,5 @@ gradlew.bat
 local.properties
 settings.gradle
 xinge_android_demo.iml
+app/build/
+build/
