@@ -35,17 +35,17 @@ android {
     }
 }
 dependencies {
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.1.0'
+    implementation 'com.android.support:appcompat-v7:25.1.0'
 
-    compile 'com.github.xingePush:xinge:1.1.8'
+    implementation 'com.github.xingePush:xinge:1.1.8'
 
     //信鸽jar
-    compile 'com.tencent.xinge:xinge:3.2.3-release'
+    implementation 'com.tencent.xinge:xinge:3.2.3-release'
     //wup包
-    compile 'com.tencent.wup:wup:1.0.0.E-release'
+    implementation 'com.tencent.wup:wup:1.0.0.E-release'
     //mid包
-    compile 'com.tencent.mid:mid:4.0.6-release'
+    implementation 'com.tencent.mid:mid:4.0.6-release'
 }
