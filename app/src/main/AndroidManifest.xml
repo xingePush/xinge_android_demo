@@ -51,6 +51,11 @@
             </intent-filter>
         </receiver>
 
+        <!-- 【不需要】仅仅信鸽DEMO测试用，发布的app切勿暴露SECRET_KEY -->
+        <meta-data
+            android:name="XG_V2_SECRET_KEY"
+            android:value="f1fa8b11f540794bf13e10d499ac5c36" />
+
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>

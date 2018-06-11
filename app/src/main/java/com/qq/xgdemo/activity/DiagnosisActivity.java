@@ -34,6 +34,7 @@ import com.tencent.android.tpush.XGPushManager;
 import com.tencent.android.tpush.common.Constants;
 import com.tencent.android.tpush.service.XGPushServiceV3;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
