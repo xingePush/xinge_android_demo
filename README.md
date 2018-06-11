@@ -1,3 +1,5 @@
+Master Branch: [![Travis CI](https://travis-ci.org/xingePush/xinge_android_demo.svg?branch=master)](https://travis-ci.org/xingePush/xinge_android_demo)
+
 # xinge_android_demo
 
 这是AndroidStudio工程集成信鸽SDK的demo
