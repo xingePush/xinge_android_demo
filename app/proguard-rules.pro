@@ -55,7 +55,6 @@
   public static final android.os.Parcelable$Creator *;
 }
 
--keep class MyClass;
 -keep public class * extends android.app.Service
 -keep class com.tencent.android.tpush.** {* ;}
 -keep class com.tencent.mid.** {* ;}
