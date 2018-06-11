@@ -20,19 +20,20 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.qq.xgdemo.R;
-import com.qq.xgdemo.bean.ClickAction;
-import com.qq.xgdemo.bean.Style;
-import com.qq.xgdemo.bean.TimeInterval;
 import com.qq.xgdemo.common.CommonWorkingThread;
 import com.qq.xgdemo.common.ExtendedListView;
 import com.qq.xgdemo.common.ExtendedListView.OnPositionChangedListener;
-import com.qq.xgdemo.common.XingeApp;
+
 import com.tencent.android.tpush.XGIOperateCallback;
 import com.tencent.android.tpush.XGLocalMessage;
 import com.tencent.android.tpush.XGPushConfig;
 import com.tencent.android.tpush.XGPushManager;
 import com.tencent.android.tpush.common.Constants;
 import com.tencent.android.tpush.service.XGPushServiceV3;
+import com.tencent.xinge.ClickAction;
+import com.tencent.xinge.Style;
+import com.tencent.xinge.TimeInterval;
+import com.tencent.xinge.XingeApp;
 
 import org.json.JSONObject;
 
@@ -278,8 +279,8 @@ public class DiagnosisActivity extends Activity implements OnPositionChangedList
         long timeMillis = System.currentTimeMillis();
         int ret_code = 0;
         try {
-            com.qq.xgdemo.bean.Message message = new com.qq.xgdemo.bean.Message();
-            message.setType(com.qq.xgdemo.bean.Message.TYPE_NOTIFICATION);
+            com.tencent.xinge.Message message = new com.tencent.xinge.Message();
+            message.setType(com.tencent.xinge.Message.TYPE_NOTIFICATION);
             Style style = new Style(1);
             style = new Style(3, 1, 0, 1, 0);
             ClickAction action = new ClickAction();
