@@ -35,7 +35,6 @@ import com.tencent.xinge.Style;
 import com.tencent.xinge.TimeInterval;
 import com.tencent.xinge.XingeApp;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -303,6 +302,7 @@ public class DiagnosisActivity extends Activity implements OnPositionChangedList
             JSONObject ret = xinge.pushSingleDevice(token, message);
             ret_code = ret.getInt("ret_code");
         } catch (Throwable e) {
+            e.printStackTrace();
             updateProgress((System.currentTimeMillis() - timeMillis) + "ms 信鸽终端向云端请求发送通知失败!\r\n" + e.getMessage());
         }
         if (ret_code == 0) {
