@@ -14,12 +14,6 @@ cache:
   directories:
   - $HOME/.gradle
 
-before_script:
-  - git fetch
-  - git checkout -b gh-pages
-  - git merge origin/master
-  - git rm --cached --ignore-unmatch index.html
-
 script:
-  - ./gradlew clean publish -i --continue
-  - ./gradlew -b finalize.gradle finalize -i
+  - ./gradlew clean
+  - ./gradlew build
