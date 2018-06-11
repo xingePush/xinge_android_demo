@@ -1,8 +1,16 @@
 apply plugin: 'com.android.application'
+apply plugin: 'maven'
+
+repositories {
+    mavenCentral();
+    maven {
+        url "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+    }
+}
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.qq.xgdemo"
         minSdkVersion 14
@@ -31,6 +39,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
+
+    compile 'com.github.xingePush:xinge:1.1.8'
 
     //信鸽jar
     compile 'com.tencent.xinge:xinge:3.2.3-release'
