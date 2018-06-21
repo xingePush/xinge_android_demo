@@ -6,7 +6,7 @@ repositories {
     google()
     mavenCentral();
     maven {
-        url "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        url "https://raw.githubusercontent.com/xingePush/maven-repository/release/"
     }
 }
 
@@ -45,7 +45,7 @@ dependencies {
     })
     implementation 'com.android.support:appcompat-v7:25.1.0'
 
-    implementation 'com.github.xingePush:xinge:1.1.8'
+    implementation 'com.github.xingePush:xinge:1.1.9'
 
     //信鸽jar
     implementation 'com.tencent.xinge:xinge:3.2.3-release'
